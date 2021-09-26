@@ -13,7 +13,8 @@ on:
       - ".github/label-configuration-files/*.ya?ml"
   schedule:
     # Run daily at 8 AM UTC to sync with changes to shared label configurations.
-    - cron: "0 8 * * *"
+    # KST 09 AM -- UTC 12 AM
+    - cron: "0 12 * * *"
   workflow_dispatch:
   repository_dispatch:
 
